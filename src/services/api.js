@@ -7,3 +7,7 @@ export const createUser = async () => {
     return res.data;
 }
 
+export const getUsers = async () => {
+    const res = await axios.get(`${API_URL}/user`);
+    return res.data;
+};
